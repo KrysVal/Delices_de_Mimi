@@ -1,0 +1,69 @@
+<html>
+<!DOCTYPE html>
+<!-- fichier qui décrit la forme de toutes les pages de l'application -->
+<!-- On précise l'encodage, les fichiers de styles et les scripts javascript communs à toutes les pages -->
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Délices de Mimi</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<script src="https://code.jquery.com/jquery-1.10.2.js" ></script>
+	<script type="text/javascript" src="/static/smoothState.js"></script>
+	<script src='/static/transition_effect.js' defer></script>
+
+
+</head>
+
+
+
+<body>
+
+	<header>
+				<!--<div id="global_header">-->
+				<span id="logo_site" ></span>
+				<span id="logo_site" >
+					<a  class="vertical" title="Revenir à la page d'accueil." href="{{url_for('root')}}" > <img class="menu" rel="icon" type="image/png" src='/static/images/baking.png' ></a><!--<img class="vertical" src='/static/images/baking.png' height="45px" ></a>-->
+					</span>
+				<span id="logo_site" ></span>
+
+				<span id="nom_site"  >
+					<a  class="nom_site zoom" title="Revenir à la page d'accueil." href="{{url_for('root')}}" >Délices de Mimi</a>
+
+					</span>
+
+
+
+				<span id="fonctionnalite">
+					<a class="vertical" href="{{url_for('panier')}}" title="Voir mon panier."><img class="menu" src='/static/images/shopping-basket.png'></a>
+					</span>
+
+				<span id="fonctionnalite">
+					<a class="vertical" href="{{url_for('compte')}}" title="Connectez-vous à votre compte."><img class="menu" src='/static/images/user.png' ></a>
+					</span>
+
+				<span id="fonctionnalite">
+					<a class="vertical" href="mailto:mimininette@hotmail.fr?subject= Délices de Mimi | " title="Contactez-moi par mail."><img class="menu" rel="icon" type="image/png" src='/static/images/email.png' ></a>
+					</span>
+
+
+	  </header>
+
+
+<!-- Le contenu de chaque page est ensuite précisé à ce niveau-->
+<div class="contenu">
+{% block content %}
+{% endblock %}
+</div>
+
+
+<!-- pied de page -->
+<footer>
+<p style='float:right;margin-right:50px;margin-top:50px;font-size:13px'>Copyright © 2021</br>Krystian Valenducq</p>
+</footer>
+
+
+
+</body>
+</html>

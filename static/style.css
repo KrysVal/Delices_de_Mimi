@@ -1,0 +1,157 @@
+body {
+  margin-top:-10px;
+  font-family:Source Sans Pro,Helvetica,Arial,sans-serif;
+  font-size:100%;
+  letter-spacing:3px;
+  width:100%;
+  min-height:950px ;
+  color:#2F4F4F;
+  text-align: center;
+  background-color:#F5F4F0;
+  }
+
+
+
+/* en tête */
+
+header {
+
+  position: relative;
+  width:100%;
+  height:100px;
+  background-color: #80B093; /*#A9DBB8; #D2386C;*/
+
+
+        }
+
+.vertical{
+        position: absolute;
+        top: 50%; /* poussé de la moitié de hauteur du référent */
+        transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+
+
+          }
+
+
+
+#logo_site
+{
+position: relative;
+float:left;
+width:11%;
+height:100%;
+
+
+}
+
+
+#nom_site
+{
+position: relative;
+float:left;
+width:34%;
+height:100%;
+
+display:inline-grid;
+text-align:center;
+align-item:center;
+
+
+}
+
+.nom_site
+{
+padding:5% 0;
+letter-spacing:6px;
+font-size:220%;
+text-decoration:none!important;
+color:white;
+font-family: URW Chancery L, cursive;
+}
+
+
+
+
+#fonctionnalite
+{
+position: relative;
+float:left;
+width:11%;
+height:100%;
+
+
+  }
+
+.contenu
+{
+position:relative;
+padding: 5% 5%;
+
+}
+
+#categorie
+{
+padding:10% 10%;
+ }
+
+.patisserie_cat{
+padding:1px 1px;
+max-width: 100%;
+height: auto;
+display: block;
+border-radius:25px;
+border: 3px solid #80B093;
+}
+
+
+
+.menu {
+transition: all .3s ease-in-out;
+padding:5% 5%;
+max-width: 50%;
+
+height: auto;
+display: block;
+
+  }
+.menu:hover { transform: scale(1.2); }
+
+
+footer {
+  margin-top: 1em;
+  text-align: right;
+  /*background-color: lightgray ;url('images/footer.png')*/
+   width:100%;
+  height:120px;
+  clear:both;
+      }
+
+
+@media screen and (max-width: 64em) {
+ body {
+      font-size: 80%;
+   }
+
+}
+@media screen and (max-width: 50em) {
+ body {
+       font-size: 75%;
+   }
+}
+@media screen and (max-width: 30em) {
+   body {
+        font-size: 50%;
+  }
+}
+
+
+
+.zoom{
+
+transition: 0.4s ease;
+}
+
+.zoom:hover{
+opacity:0.7;
+transform:scale(1.05);
+}

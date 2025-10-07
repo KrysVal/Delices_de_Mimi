@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+<div style="text-align:justify;margin-top:50px;margin-bottom:150px;margin-left:10%;margin-right:10%;font-size:20">
+Bienvenue dans mon univers gourmand !  <br><br>
+
+Je suis ravie de vous accueillir sur mon site dédié à la pâtisserie artisanale, où passion, créativité et gourmandise se rencontrent.
+
+À travers mes créations sucrées, je vous invite à découvrir un monde de saveurs, de textures et de couleurs. Chaque gâteau, chaque entremets, chaque petite douceur est réalisé avec soin, amour du détail et produits de qualité.
+
+Que vous soyez amateur de pâtisserie fine, à la recherche d'inspiration, ou simplement curieux de voir mes réalisations, vous êtes ici chez vous.
+
+Prenez le temps de parcourir mes créations, de vous laisser tenter…et pourquoi pas, de me confier votre projet sucré pour une occasion spéciale !<br><br>
+
+Bonne visite, et à très bientôt autour d'une douceur !
+</div>
+
+
+<h1 style="text-align:center;letter-spacing:5px;color:#80B093;font-size:40"><em>Catégories</em></h1>
+    <div style="display:grid;grid-template-columns: 50% 50%;grid-template-rows: 50% 50%">
+        <span id="categorie" class="zoom">
+            <a href="{{url_for('gateaux')}}" title="Découvrez tous mes gâteaux, tartes et flans." style="text-decoration:none!important"><h2>Gâteaux & Tartes</h2>
+                <img class="patisserie_cat " src='/static/photos/gateau_praline.jpg'></a></span>
+        <span id="categorie" class="zoom">
+            <a href="{{url_for('buches')}}" title="Découvrez des bûches et entremets parfait pour les fêtes de fin d'année qui feront sensation auprès de vos convives." style="text-decoration:none!important"><h2>Bûches & Entremets</h2>
+                <img class="patisserie_cat" src='/static/photos/buche_vanille_praline.jpg'></a></span>
+<!--        <span id="categorie">
+            <a href=# title="Bûches" style="text-decoration:none!important"><h2>Bûches</h2>
+                <img class="patisserie_cat" src='/static/photos/buche_framboise_pistache.jpg'></a></span>
+        <span id="categorie">
+            <a href=# title="Tartes" style="text-decoration:none!important"><h2>Tartes</h2>
+                <img class="patisserie_cat" src='/static/photos/galette_des_rois.jpg'></a></span>
+        <span id="categorie">
+            <a href=# title="Mignardises" style="text-decoration:none!important"><h2>Mignardises</h2>
+                <img class="patisserie_cat" src='/static/photos/mignardise_speculos.jpg'></a>   </span> -->
+       </div>
+<div style="text-align:center;margin-top:150px;min-height:500px">
+Site en construction | Je vous dis à très vite pour découvrir mes succulentes recettes les choufettes !</br>Coeur sur vous
+</div>
+{% endblock %}
